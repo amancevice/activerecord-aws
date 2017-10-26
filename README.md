@@ -1,5 +1,8 @@
 # AWS Helpers for ActiveRecord
 
+[![build](https://travis-ci.org/amancevice/activerecord-aws.svg?branch=master)](https://travis-ci.org/amancevice/activerecord-aws)
+
+
 ## Installation
 
 Add this line(s) to your application's Gemfile:
