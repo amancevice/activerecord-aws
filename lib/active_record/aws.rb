@@ -1,4 +1,3 @@
-require "active_record"
 require "active_record/aws/version"
 
 module ActiveRecord
@@ -8,7 +7,7 @@ module ActiveRecord
         Migration.stage :DecryptPassword do |stage|
           stage.step :kms_decrypt, :ciphertext do
             blob      = Base64.decode64 connection_config[:ciphertext]
-            decrypted = Aws::KMS::Client.new.decrypt ciphertext_blob:blob
+            decrypted = ::Aws::KMS::Client.new.decrypt ciphertext_blob:blob
             connection_config.update password:decrypted[:plaintext]
           end
         end
