@@ -24,12 +24,12 @@ Instead of providing a `password` key in a configuration definition, use `cipher
 
 ```yaml
 production:
-  adapter:  mysql
-  ciphertext: AQECAHhXdRbgz8ljDIWpU514phvxVx75R6f+A9VIrWvHZln/eQAAAGYwZAYJKoZIhvcNAQcGoFcwVQIBADBQBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDFKcRENqOdZFCUiVKQIBEIAjBi2ABQVzw9gjJUJCE0DBGoE0cQMgJfBZsnuRCjZl4G0Jc70=
-  database: production
-  host:     localhost
-  port:     3306
-  username: produser
+  adapter:    mysql
+  ciphertext: AQECAHhXdRbgz8ljDIWpU51...=
+  database:   production
+  host:       localhost
+  port:       3306
+  username:   produser
 ```
 
 Then, add the following line to your `Rakefile`:
