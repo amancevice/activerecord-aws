@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    active_record-aws (0.1.0)
+    activerecord-aws (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -54,8 +54,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_record-aws!
   activerecord (~> 5.1)
+  activerecord-aws!
   aws-sdk (~> 2.10)
   bundler (~> 1.16.a)
   rake (~> 10.0)

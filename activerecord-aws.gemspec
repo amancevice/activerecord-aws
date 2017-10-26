@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "active_record/aws/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "active_record-aws"
+  spec.name          = "activerecord-aws"
   spec.version       = ActiveRecord::Aws::VERSION
   spec.authors       = ["Alexander Mancevice"]
   spec.email         = ["alexander.mancevice@gmail.com"]
