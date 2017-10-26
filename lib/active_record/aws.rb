@@ -26,7 +26,7 @@ module ActiveRecord
         puts "== #{start.strftime('%Y%m%d%H%M%S')} #{name}: begin ".ljust 79, '='
         result = yield self
         puts "== #{start.strftime('%Y%m%d%H%M%S')} #{name}: end "\
-             "(#{Time.now.utc - start}) ".ljust 79, '='
+             "(#{(Time.now.utc - start).round 4}s) ".ljust 79, '='
         puts
         result
       end
@@ -35,7 +35,7 @@ module ActiveRecord
         puts "-- #{method}(#{name.to_s.to_sym.inspect})"
         start  = Time.now.utc
         result = yield
-        puts "   -> #{Time.now.utc - start}"
+        puts "   -> #{(Time.now.utc - start).round 4}s"
         result
       end
     end
