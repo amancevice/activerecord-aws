@@ -33,7 +33,7 @@ module ActiveRecord
       end
 
       def step method, name
-        puts "-- #{method}(#{name.to_sym.inspect})"
+        puts "-- #{method}(#{name.to_s.to_sym.inspect})"
         start  = Time.now.utc
         result = yield
         puts "   -> #{Time.now.utc - start}"
