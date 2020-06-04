@@ -1,6 +1,10 @@
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
-
-# Specify your gem's dependencies in active_record-aws.gemspec
 gemspec
+
+group :development do
+  gem "bundler",      "~> 2.1"
+  gem "rake",         "~> 12.3.3"
+  gem "rspec",        "~> 3.0"
+  gem "activerecord", "~> 5.1"
+end
