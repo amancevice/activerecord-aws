@@ -38,11 +38,12 @@ GEM
       rspec-support (~> 3.10.0)
     rspec-support (3.10.2)
     thread_safe (0.3.6)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   activerecord (~> 5.1)
